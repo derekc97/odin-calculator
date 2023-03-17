@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.calculator-container {
+    height: 500px;
+    background-color: lightblue;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto)
+}
+
+.button {
+    border: 2px solid red;
+}
+
+.screen {
+    border: 2px solid blue;
+    grid-column: 1 / 5;
+}
+
+#zero {
+    border: 2px solid yellow;
+    grid-column: 1 / 3;
+}

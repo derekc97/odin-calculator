@@ -9,10 +9,21 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    font-size: 50px;
+    font-family: 'Gruppo', cursive;
+    font-weight: 900;
+}
+
 .calculator-container {
     margin-top: 50px;
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .calculator {
@@ -22,21 +33,39 @@ body {
     border: 10px solid black;
 }
 
+.numButton {
+    font-size: 25px;
+}
+
+.operatorButton {
+    font-size: 20px;
+}
+
+.otherButton {
+    font-size: 20px
+}
+
 .screen {
     grid-column: 1 / -1;
     display: flex;
-    justify-content: end;
+    flex-direction: column;
     align-items: end;
+    justify-content: space-between;
     background-color: black;
     color: white;
     padding: 15px;
-    font-size: 30px;
+    font-size: 40px;
+    height: 80px;
+}
+
+.topDisplay {
+    font-size: 20px;
 }
 
 .button {
-    min-height: 60px;
+    min-height: 100px;
     height: auto;
-    min-width: 60px;
+    min-width: 100px;
     width: auto;
     border: 1px solid grey;
     display: flex;
@@ -50,7 +79,7 @@ body {
     opacity: 0.5;
 }
 
-.operator {
+.operatorButton {
     background-color: #bcbcbc;
 }
 
@@ -60,4 +89,26 @@ body {
 
 #equals {
     background-color: orange;
+}
+
+#all-clear, #del {
+    background-color: #c63e3e;
+    color: white;
+}
+
+#plus-minus {
+    background-color: #aad8fd;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    gap: 50px;
+    padding-bottom: 50px;
+}
+
+.top-button > img, .github-button > img {
+    height: 100%;
+    cursor: pointer;
 }

@@ -7,30 +7,49 @@
     <title>My Calculator</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="hero-text">My Mid Calculator</div>
     <div class="calculator-container">
         <div class="calculator">
-            <div class="screen">0</div>
-            <div class="numButton button"></div>
-            <div class="numButton button"></div>
-            <div class="numButton button"></div>
-            <div class="numButton button"></div>
-            <div class="numButton button"></div>
-            <div class="numButton button"></div>
-            <div class="numButton button"></div>
-            <div class="numButton button"></div>
-            <div class="numButton button"></div>
-            <div class="numButton button"></div>
-            <div class="numButton button"></div>
-            <div class="numButton button"></div>
-            <div class="numButton button"></div>
-            <div class="numButton button"></div>
-            <div class="numButton button"></div>
-            <div class="numButton button"></div>
+            <div class="screen">
+                <div class="topDisplay">0</div>
+                <div class="bottomDisplay">0</div>
+            </div>
+            <button class="otherButton button" id="all-clear">AC</button>
+            <button class="otherButton button" id="del">DEL</button>
+            <button class="otherButton button" id="plus-minus">+/-</button>
+            <button class="operatorButton button">/</button>
+            <button class="numButton button">7</button>
+            <button class="numButton button">8</button>
+            <button class="numButton button">9</button>
+            <button class="operatorButton button">x</button>
+            <button class="numButton button">4</button>
+            <button class="numButton button">5</button>
+            <button class="numButton button">6</button>
+            <button class="operatorButton button">-</button>
+            <button class="numButton button">1</button>
+            <button class="numButton button">2</button>
+            <button class="numButton button">3</button>
+            <button class="operatorButton button">+</button>
+            <button class="numButton button" id="zero">0</button>
+            <button class="otherButton button" id="decimal">.</button>
+            <button class="otherButton button" id="equals">=</button>
         </div>
 
 
     </div>
+    <div class="footer">
+        <div class="github-button">
+            <img src="./img/github-mark.png">
+        </div>
+        <div class="top-button">
+            <img src="./img/top.png">
+        </div>
+    </div>
+    
 </body>
 </html>
